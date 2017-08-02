@@ -1,0 +1,16 @@
+#image_container {
+  width: 800px;
+  height: 600px;
+  float: left;
+
+}
+.image_in_grid {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  float: left;
+  }
+.image_in_grid img {
+width: 100%;
+
+}
