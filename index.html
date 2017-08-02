@@ -55,7 +55,7 @@
 
     function refresh() {
       var xhttp = new XMLHttpRequest();
-      xhttp.open("GET", "https://krch1y23vj.execute-api.us-east-1.amazonaws.com/prod/mydemoresource", true);
+      xhttp.open("GET", "https://your-api-url-here.amazonaws.com/prod/mydemoresource", true);
       xhttp.send();
       xhttp.addEventListener("readystatechange", processRequest, false);
 
@@ -63,8 +63,7 @@
         if (xhttp.readyState == 4 && xhttp.status == 200) {
           var response = JSON.parse(xhttp.responseText);
           var numberString = response.image + "";
-          //var numberToDisplay = numberString;
-
+          
           if(numberString < 5 && numberString > 0) {
             showFullImage(numberString);
           } else {
