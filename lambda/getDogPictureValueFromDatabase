@@ -1,3 +1,5 @@
+//the lambda function that gets the value from the DynamoDB and returns it to the API
+
 'use strict';
 var AWS = require("aws-sdk");
 var dynamodb = new AWS.DynamoDB();
